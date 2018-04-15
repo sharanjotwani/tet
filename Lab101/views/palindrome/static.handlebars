@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Best Palindrome Checker in the World!</title>
+    <script>
+        document.title = "The Best Palindrome Checker in the World!";
+    </script>
+</head>
+<main class = "mainclass">
+    <h1>The Best Palindrome Checker in the World!</h1>
+    <div class="box">
+    <p class = "description">A palindrome is a phrase that is spelled the same way, backwards and forwards (ignoring spacing and punctuation; only alphanumeric characters matter).
+        <br>This website will tell you whether the text you enter is a Palindrome or not.<br>Keep in mind that only alphanumeric characters 
+        will be taken into consideration. Special characters and blank spaces will be ignored while checking.
+    </p>
+    <form method="post" id="form_static" action="/result">
+        <label class = "enter" for= "palindrome">Enter Text to check for Palindrome below</label>
+        <input id="palindrome" class="inputbox" type="text" name="palindrome" placeholder="Enter input here">
+        <lable for = "psw">Password</lable>
+        <input type="password" placeholder="Enter Password" name="psw">
+        <button id="subButton" class="subButton" type="submit">Submit</button>
+    </form>
+</div>
+    <div class="form-group hidden" id="error-container">
+        <div class="alert alert-danger text-goes-here"></div>
+        
+    </div>
+
+    <div class="form-group hidden" id="result-container">
+        <div class="alert alert-success text-goes-here"></div>
+    </div>
+
+</main>
+</html>
